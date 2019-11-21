@@ -1,0 +1,44 @@
+# Useful aliases for Laravel development.
+# Use: source .aliases
+
+alias a='php artisan'
+alias am='php artisan migrate'
+alias ar='php artisan route:list | less -S'
+alias cdo='composer dump-autoload -o'
+alias cout='composer outdated'
+
+alias g='git'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gl='git log --stat=120'
+alias gs='git status'
+alias gwtf='git log --follow -p' # file name
+
+alias h='history'
+alias j='jobs'
+
+alias phpcs='vendor/bin/phpcs'
+alias phpmd='vendor/bin/phpmd'
+alias publicip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+alias t='phpunit --testdox'
+alias tinker='php artisan tinker'
+
+alias vhalt='cd ~/Documents/Homestead && vagrant halt && cd -'
+alias vreload='cd ~/Documents/Homestead && vagrant reload --provision && cd -'
+alias vssh='cd ~/Documents/Homestead && vagrant ssh && cd -'
+alias vsuspend='cd ~/Documents/Homestead && vagrant suspend && cd -'
+alias vup='cd ~/Documents/Homestead && vagrant up && cd -'
+
+function dt
+{
+	date +%Y%m%d-%H%M
+}
+
+function joke
+{
+	echo $(curl -s http://whatthecommit.com/index.txt)
+}
+
